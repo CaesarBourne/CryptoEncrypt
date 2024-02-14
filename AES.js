@@ -43,3 +43,7 @@ async function AESDec() {
     )
   );
 }
+
+AESEnc();
+
+AESDec();
