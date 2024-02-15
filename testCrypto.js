@@ -20,4 +20,8 @@ const { keccak256 } = require("ethereum-cryptography/keccak");
     "second 256 ",
     bytesToHex(sha256(utf8ToBytes("“Web3 is Awesome”")))
   );
+
+  const publicKey = bytesToHex(secp256k1.getPublicKey(privateKey, false));
+  //const publicKey = secp256k1.getPublicKey(privateKey);
+  console.log("Public Key Before Recovery", publicKey);
 })();
